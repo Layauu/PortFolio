@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto&display=swap');
+html {
+    scroll-behavior: smooth;
+    font-family: 'Hammersmith One', sans-serif;
+    /* Ici c'est Dark*/
+    /*--color1: #313E50;
+    --color2: #3A435E;
+    --color3: #455561;
+    --color4: #5C6672;
+    --color5: #6C6F7F;*/
+
+    /* Ici c'est Bonbon*/
+    /*--color1: #880D1E;
+    --color2: #DD2D4A;
+    --color3: #F26A8D;
+    --color4: #F49CBB;
+    --color5: #CBEEF3;*/
+
+    /* Ici c'est blog déco*/
+    --color1: #6B6054;
+    --color2: #929487;
+    --color3: #A1B0AB;
+    --color4: #C3DAC3;
+    --color5: #D5ECD4;
+
+
+    /*--color1: #C3F73A;
+    --color2: #95E06C;
+    --color3: #68B684;
+    --color4: #094D92;
+    --color5: #1C1018;*/
+
+
+    /*--color1: #;
+    --color2: #;
+    --color3: #;
+    --color4: #;
+    --color5: #;*/
+
+    color: white;
+}
+
+main {
+    padding: 15px;
+    background-color: var(--color3);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+article {
+    padding: 15px;
+    /*border: 1px solid var(--color1);*/
+    border-radius: 10px;
+    background-color: var(--color5);
+    color: black;
+}
+
+.line2 {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.formation {
+    display: flex;
+    flex-direction: column;
+}
+
+.formation .formadiv {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.formation .formadiv article {
+    border: 1px solid black;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.formation .formadiv article .diiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--color1);
+}
+
+
+
+.header {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header img {
+    height: 90%;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 10px;
+    image-rendering: optimizeQuality;
+}
+
+.header .texte {
+    text-align: center;
+    font-size: x-large;
+}
+
+.topnav {
+    background-color: var(--color2);
+    display: flex;
+}
+
+.topnav li {
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    list-style-type: none;
+    position: relative;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: white;
+}
+
+.topnav li:hover {
+    background-color: var(--color3);
+    box-shadow: 1px 1px 2px black;
+    
+}
+
+.topnav ul {
+    display: none;
+    position: absolute;
+    background-color: var(--color3);
+    width: max-content;
+}
+
+
+.topnav li:hover ul {
+    display: block;
+}
+
+/*.pres, .formation, .exp {
+    border-bottom: 1px solid var(--color1);
+}*/
