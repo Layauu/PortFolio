@@ -50,7 +50,7 @@ main {
 }
 
 
-article {
+.pres, .exp, .comp, .formation {
     padding: 15px;
     /*border: 1px solid var(--color1);*/
     border-radius: 10px;
@@ -61,6 +61,8 @@ article {
 .line2 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 15px;
 }
 
@@ -71,24 +73,18 @@ article {
 
 .formation .formadiv {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .formation .formadiv article {
-    border: 1px solid black;
-    width: 50%;
+    margin: 10px;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: start;
 }
 
-.formation .formadiv article .diiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: max-content;
-}
 
 body {
     margin: 0px;
@@ -157,3 +153,24 @@ body {
 /*.pres, .formation, .exp {
     border-bottom: 1px solid var(--color1);
 }*/
+
+footer .join div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+footer .join .grandDiv {
+    flex-direction: column;
+}
+
+.inside {
+    align-items: baseline;
+}
+
+footer .join .grandDiv .inside .emails {
+    display: flex;
+    flex-direction: column;
+}
